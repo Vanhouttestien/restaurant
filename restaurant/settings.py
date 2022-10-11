@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'restaurantapp',
-    'cloudinary' 
+    'cloudinary', 
 ]
 
 MIDDLEWARE = [
