@@ -1,8 +1,16 @@
-
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* 
 
 #background_home{
-    background-color: blueviolet;
-    height: 200px;
-    width: 200px;
-
-}
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */

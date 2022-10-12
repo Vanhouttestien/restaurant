@@ -45,11 +45,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites', 
     'cloudinary_storage',
+    'allauth', 
+    'allauth.account', 
+    'allauth.socialaccount',
     'django.contrib.staticfiles',
     'restaurantapp',
     'cloudinary', 
 ]
+
+SITE_ID = 1
+
+LOGIN_REDERICT_URL='/'
+LOGOUT_REDERICT_URL='/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
