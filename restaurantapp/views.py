@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import reservation, Costumer
-from .forms import reservationForm
+from .models import Reservation, Costumer
+from .forms import ReservationForm
 
 
 # Create your views here.
@@ -9,7 +9,7 @@ def index(request):
     return render(request,'index.html')
 
 def book(request):
-    form = reservationForm()
+    form = ReservationForm()
     context = {
         'form': form
         }

@@ -18,10 +18,9 @@ class Costumer(models.Model):
     email= models.EmailField()
     created_on = models.DateTimeField(auto_now_add=True)
 
-class reservation(models.Model): 
+class Reservation(models.Model): 
     date = models.DateField()
-    time = models.TimeField()
     number_of_people = models.IntegerField()
     costumer = models.ForeignKey(Costumer, on_delete=models.CASCADE, related_name="costumer")
     created_on = models.DateTimeField(auto_now_add=True)
-    timeslot= forms.CharField(label='arrival time', widget=forms.Select(choices=TIME_CHOICES))
+    timeslot = forms.CharField(label='Arrival time?', widget=forms.Select(choices=TIME_CHOICES))
