@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
                 <a class="navbar-brand" href="#">Name of restaurant</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">About us</a>
@@ -30,7 +30,7 @@
                     <a class="nav-link" href="#">Menu</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Book a table</a>
+                    <a class="nav-link" href="{% url 'book' %}">Book a table</a>
                   </li>
                   {% if user.is_authenticated %}
                   <li class="nav-item">
@@ -54,7 +54,7 @@
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-    <footer class="text-center text-lg-start bg-light text-muted">
+    <footer class="text-center text-lg-start bg-dark text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->
