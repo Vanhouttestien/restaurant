@@ -36,6 +36,12 @@
                   <li class="nav-item">
                       <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                   </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'profile' %}">Personal information</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{% url 'order_history' %}">Order History</a>
+                  </li>
                   {% else %}
                   <li class="nav-item">
                       <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
@@ -54,7 +60,7 @@
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-    <footer class="text-center text-lg-start bg-dark text-muted">
+    <footer class="sticky-bottom text-center text-lg-start bg-dark text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->

@@ -15,3 +15,9 @@ def book(request):
         }
     return render(request, 'book.html', context)
 
+def profile(request):
+    return render(request, 'profile.html')
+
+
+def order_history(request):
+    return render(request, 'order_history.html')    

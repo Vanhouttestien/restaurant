@@ -5,7 +5,12 @@
     <div class="d-flex justify-content-center align-items-center" id="background_home">
         <div >
             <p> Come and enjoy our real Italian cuisine.</p>
-            <button>Book a table</button>
+            {% if user.is_authenticated %}
+            <a class="btn btn-primary" href="#" role="button">Book a table</a>
+            {% else %}
+            <p> To book and manage your bookings you need to have an account and signin</p>
+            <a class="btn btn-primary" href="{% url 'account_login' %}" role="button">signin</a>
+            {% endif%}
         </div>
     </div>
 </div>
