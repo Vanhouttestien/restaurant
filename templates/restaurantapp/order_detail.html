@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="mt-5 ms-2">
+    <h1></h1>
+    
+   
+    
+</div>
+
+<div class="card" style="width: 18rem;">
+    <div class="card-header">
+        Order : {{user}}
+      </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><p>Date: {{order.date}}</p></li>
+      <li class="list-group-item"> <p>Time: {{order.timeslot}}</p></li>
+      <li class="list-group-item"><p>Party: {{order.number_of_people}}</p></li>
+    </ul>
+  </div>
+{% endblock %}

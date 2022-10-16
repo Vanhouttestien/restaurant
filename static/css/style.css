@@ -4,20 +4,33 @@ body, html{
     height: 100%;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    color: antiquewhite;
-    background-color: black;
+    color: black;
+    background-color: white;
 }
 
 a{
     text-decoration: none;
 }
-   
 
 #background_home{
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665571284/service-1303313_1920_fkxwi0.jpg);
+    background: url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665875221/salad-2068220_1920_uzogpf.jpg);
     height:100vh; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-y: hidden;
+    overflow-y: visible;
+    opacity: 0.8;
+    position: relative;
 } 
+
+nav{
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.text-home{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10%;
+}

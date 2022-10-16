@@ -1,0 +1,6 @@
+<a href="{% url 'order_history' %}">Go back</a>
+<form method="POST">
+    {% csrf_token %}
+    <p>Are you sure you want to cancel your booking?</p>
+    <input type="submit" value="Delete">
+</form>

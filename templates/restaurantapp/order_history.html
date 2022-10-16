@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+
+{% if request.user.is_authenticated %}
+    <h2 class="mt-5"> Orderhistory: {{request.user}}</h2>
+    <hr>
+{% else %}
+<a href="">Login</a>
+{% endif %}
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th scope="col">Date: </th>
+            <th scope="col"> Time </th>
+            <th scope="col"> party </th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+{% for order in orders %}
+<tr>
+    <td>{{order.date}}</td>
+    <td>{{order.timeslot}}</td>
+    <td>{{order.number_of_people}}</td>
+    <td><a href="{% url 'order_detail' order.id %}">View</a></td>
+    <td><a href="{% url 'update_booking' order.id %}">Edit</a></td>
+    <td><a href="{% url 'delete_booking' order.id %}">Cancel</a></td>
+</tr>
+{% empty %}
+<h3>No orders</h3>
+{% endfor %}
+</table>
+
+<a href="{% url 'book' %}" class="btn btn-primary">Book a table</a>
+{% endblock %}
