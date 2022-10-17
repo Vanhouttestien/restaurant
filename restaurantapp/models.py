@@ -5,20 +5,20 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-# # Create your models here.
-# class Costumer(models.Model):
-#     user = models.ForeignKey(
-#         settings.AUTH_USER_MODEL,
-#         on_delete=models.CASCADE,blank=True, null=True
-#     )
-#     fname = models.CharField(max_length=30)
-#     lname = models.CharField(max_length=30)
-#     phonenumber = models.CharField(max_length=12)
-#     email = models.EmailField()
-#     created_on = models.DateTimeField(auto_now_add=True)
+# Create your models here.
+class Costumer(models.Model):
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,blank=True, null=True
+    )
+    fname = models.CharField(max_length=30)
+    lname = models.CharField(max_length=30)
+    phonenumber = models.CharField(max_length=12)
+    email = models.EmailField()
+    created_on = models.DateTimeField(auto_now_add=True)
 
-#     def __str__(self):
-#         return f"{self.fname} {self.lname}"
+    def __str__(self):
+        return f"{self.fname} {self.lname}"
 
 
 class Reservation(models.Model):
@@ -45,8 +45,6 @@ class Reservation(models.Model):
     )
     comments = models.TextField(blank=True, null=True)
     completed = models.BooleanField(blank=True, null=True)
-
     
     class Meta: 
         get_latest_by = 'date'
-

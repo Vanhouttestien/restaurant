@@ -53,7 +53,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'restaurantapp',
     'cloudinary',
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 SITE_ID = 1
 

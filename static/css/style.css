@@ -4,33 +4,25 @@ body, html{
     height: 100%;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
-    color: black;
-    background-color: white;
+    color: lightgray;
+    background-color: #191919;
 }
 
 a{
     text-decoration: none;
-}
-
-#background_home{
-    background: url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665875221/salad-2068220_1920_uzogpf.jpg);
-    height:100vh; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-y: visible;
-    opacity: 0.8;
-    position: relative;
 } 
 
-nav{
-    background: rgba(255, 255, 255, 0.7);
-}
+/*Homepage*/
 
-.text-home{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 10%;
-}
+/*CSS for  full page background and text overlay from: https://write.corbpie.com/full-screen-image-background-with-text-overlay/*/
+.image-background {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665875223/pizza-4968645_1920_q4qhey.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* 
+/* css for book.html (book a table form) */
+
