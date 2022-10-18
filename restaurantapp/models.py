@@ -34,7 +34,7 @@ class Reservation(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     timeslot = models.CharField(max_length=8, choices=TIME_CHOICES)
     comments = models.TextField(blank=True, null=True)
-    
+    completed = models.BooleanField(blank=True, null=True)
     class Meta: 
         get_latest_by = 'date'
     

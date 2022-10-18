@@ -15,17 +15,30 @@ a{
     text-decoration: none;
 } 
 
+
 /*Homepage*/
 /*CSS for  full page background and text overlay from: https://write.corbpie.com/full-screen-image-background-with-text-overlay/*/
 .image-background {
     height: 100vh;
     min-height: 500px;
-    background-image: url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665875223/pizza-4968645_1920_q4qhey.jpg);
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122619/rome-1968149_1920_zp73em.jpg); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
   }
-/* 
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.btn-home{
+    margin: 10px;
+    color: none;
+    border: 2px solid darkred;
+    color: white;
+}
 /* css for book.html (book a table form) */
 
 
@@ -40,7 +53,9 @@ a{
 
 
 #bg-bookingform{
-    background-image: url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665875221/salad-2068220_1920_uzogpf.jpg);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122855/sunset-3817287_1920_gxn9ky.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

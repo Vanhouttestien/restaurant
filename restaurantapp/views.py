@@ -19,11 +19,15 @@ class OrderHistory(LoginRequiredMixin, ListView):
     model = Reservation
     context_object_name = 'orders'
     template_name = 'restaurantapp/order_history.html'
+    ordering = ['-date']
+    
 
-    def get_context_data(self, **kwargs): 
+    def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['orders'] = context['orders'].filter(user=self.request.user)
         return context
+
+       
 
 class CreateBooking(ModelForm):
     class Meta:
@@ -53,6 +57,7 @@ class UpdateBooking(LoginRequiredMixin, UpdateView):
     template_name = 'restaurantapp/book.html'
     fields = ['date', 'timeslot', 'number_of_people', 'comments']
     success_url = reverse_lazy('order_history')
+
 
 # class based on https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 class CancelBooking(LoginRequiredMixin, DeleteView):

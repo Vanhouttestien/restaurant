@@ -1,9 +1,9 @@
-<div id="background_home"></div>
+<div class='image-background'>
 {% extends 'base.html' %}
 
 {% block content %}
 
-<div class='image-background'>
+
     <div class='container h-100'>
       <div class='row h-100 align-items-center'>
         <div class='col-4 text-center'></div>
@@ -11,27 +11,16 @@
           <div class="container">
             <blockquote class="blockquote"> 'We serve authentic Italian food. We use only use fresh and qualitative ingredients.'</blockquote>
             {% if user.is_authenticated %}
-            <a class="btn btn-danger" href="#" role="button">Book a table</a>
+            <a class="btn btn-home" href="#" role="button">Book</a>
             {% else %}
-            <a class="btn btn-danger" href="{% url 'account_login' %}" role="button">signin</a>
+            <a class="btn btn-home" href="{% url 'account_login' %}" role="button">Book</a>
             {% endif%}
+            <a class="btn btn-home" href="#" role="button">Menu</a>
         </div>
         </div>
       </div>
     </div>
   </div>
-<!-- 
-
-      </div>
-      <div class="col align-self-center">
-      </div>
-      <div class="col align-self-end">
-        One of three columns
-      </div>
-    </div>
-  </div>
-        -->
-
 
 
 {% endblock %}
