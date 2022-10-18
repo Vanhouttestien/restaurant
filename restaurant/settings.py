@@ -56,6 +56,11 @@ INSTALLED_APPS = [
     'crispy_forms',
 ]
 
+
+ACCOUNT_FORMS = {
+    'signup': 'restaurantapp.forms.CustomSignupForm',
+} 
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 SITE_ID = 1
@@ -158,3 +163,6 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+

@@ -28,3 +28,26 @@ a{
 /* 
 /* css for book.html (book a table form) */
 
+
+.form{
+    background-color: rgba(255,255,255,0.8);
+    margin: 10% 0;
+    color: #191919;
+    width: 70%;
+    margin-left: 15%;
+    padding: 2%;
+}
+
+
+#bg-bookingform{
+    background-image: url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665875221/salad-2068220_1920_uzogpf.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*footer*/
+footer{
+    height: 9%;
+}

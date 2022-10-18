@@ -8,11 +8,11 @@ from django.forms import ModelForm
 from django.contrib.auth.models import User
 
 def index(request):
-    return render(request,'index.html')
+    return render(request,'restaurantapp/index.html')
 
 
 def profile(request):
-    return render(request, 'profile.html')
+    return render(request, 'restaurantapp/profile.html')
 
 # class based on https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 class OrderHistory(LoginRequiredMixin, ListView):
