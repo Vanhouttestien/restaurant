@@ -5,14 +5,14 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
-# Create your models here.
-class Customer(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phonenumber = models.CharField(max_length=12)
-    created_on = models.DateTimeField(auto_now_add=True)
+# # Create your models here.
+# class Customer(models.Model):
+#     user = models.OneToOneField(User, on_delete=models.CASCADE, blank=True, null=True)
+#     phonenumber = models.CharField(max_length=12)
+#     created_on = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return f"{self.fname} {self.lname}"
+#     def __str__(self):
+#         return f"{self.fname} {self.lname}"
 
 
 class Reservation(models.Model):
@@ -28,7 +28,7 @@ class Reservation(models.Model):
     ('21:30', '21:30'),
     ('22:00', '22:00'),
     ]
-
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, blank=True, null=True)
     date = models.DateField()
     number_of_people = models.IntegerField()
     created_on = models.DateTimeField(auto_now_add=True)

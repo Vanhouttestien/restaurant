@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from . forms import ReservationForm
 from django.forms import ModelForm
+from django.contrib.auth.models import User
 
 def index(request):
     return render(request,'index.html')
@@ -16,7 +17,7 @@ def profile(request):
 # class based on https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 class OrderHistory(LoginRequiredMixin, ListView):
     model = Reservation
-    context_object_name='orders'
+    context_object_name = 'orders'
     template_name = 'restaurantapp/order_history.html'
 
     def get_context_data(self, **kwargs): 

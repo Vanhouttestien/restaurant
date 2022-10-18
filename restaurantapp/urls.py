@@ -12,5 +12,4 @@ urlpatterns = [
     path('book/', CreateBooking.as_view(),name='book'),
     path('update_booking/<int:pk>/', UpdateBooking.as_view(), name='update_booking'),
     path('delete_booking/<int:pk>/', CancelBooking.as_view(), name='delete_booking'),
-
 ]
