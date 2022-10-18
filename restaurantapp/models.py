@@ -6,15 +6,9 @@ from django.contrib.auth.models import User
 
 
 # Create your models here.
-class Costumer(models.Model):
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,blank=True, null=True
-    )
-    fname = models.CharField(max_length=30)
-    lname = models.CharField(max_length=30)
+class Customer(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     phonenumber = models.CharField(max_length=12)
-    email = models.EmailField()
     created_on = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
@@ -34,17 +28,13 @@ class Reservation(models.Model):
     ('21:30', '21:30'),
     ('22:00', '22:00'),
     ]
-    
+
     date = models.DateField()
     number_of_people = models.IntegerField()
     created_on = models.DateTimeField(auto_now_add=True)
     timeslot = models.CharField(max_length=8, choices=TIME_CHOICES)
-    user = models.ForeignKey(
-        settings.AUTH_USER_MODEL,
-        on_delete=models.CASCADE,blank=True, null=True
-    )
     comments = models.TextField(blank=True, null=True)
-    completed = models.BooleanField(blank=True, null=True)
     
     class Meta: 
         get_latest_by = 'date'
+    

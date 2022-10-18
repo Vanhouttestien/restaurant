@@ -1,5 +1,5 @@
 from django import forms
-from .models import Reservation
+from .models import Reservation, Customer
 
 class DateInput(forms.DateInput):
     input_type='date'
@@ -11,3 +11,8 @@ class ReservationForm(forms.ModelForm):
         widgets = {
             'date': DateInput()
         }
+
+class CostumerForm(forms.ModelForm):
+    class Meta: 
+        model=Customer
+        fields='__all__'
