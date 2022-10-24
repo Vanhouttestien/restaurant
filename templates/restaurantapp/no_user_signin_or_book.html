@@ -1,0 +1,13 @@
+
+    {% extends 'base.html' %}
+    {%load crispy_forms_tags %}
+    {% block content %}
+    
+<p>You are not logged in. Would you like to proceed without a account? 
+    With an account you can manage your own bookings. You can update or delete a reservation online. 
+    Without an account you make changes or delete a reservationby sending a email to il.cucchiaio.d'oro@gmail.com or call the number +1 202 555 0156. 
+</p>
+<p>would you like to proceed without an account? </p>
+<a class="btn btn-home" href="{% url 'book_no_user' %}" role="button">Yes</a>
+<a class="btn btn-home" href= "{% url 'account_signup' %}" role="button">No</a>
+    {% endblock %}

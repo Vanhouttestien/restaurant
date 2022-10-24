@@ -1,5 +1,5 @@
 from django import forms
-from .models import Reservation
+from .models import Reservation,ReservationNoUser
 from allauth.account.forms import SignupForm
 
 class DateInput(forms.DateInput):
@@ -13,6 +13,13 @@ class ReservationForm(forms.ModelForm):
             'date': DateInput()
         }
 
+class ReservationNoUserForm(forms.ModelForm):
+    class Meta: 
+        model = ReservationNoUser
+        fields = [ 'fname', 'lname','email','timeslot',  'date', 'number_of_people', 'comments']
+        widgets = {
+            'date': DateInput()
+        }
 # class CostumerForm(forms.ModelForm):
 #     class Meta:
 #         model=Customer

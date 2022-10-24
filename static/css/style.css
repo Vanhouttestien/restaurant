@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 body, html{
     padding: 0;
     margin: 0;
-    height: 100%;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     color: lightgray;
     background-color: #191919;
-  
 }
 
-
+.navbar-brand{
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    color: #d4af37;
+}
 
 a{
     text-decoration: none;
@@ -18,16 +21,20 @@ a{
 
 /*Homepage*/
 /*CSS for  full page background and text overlay from: https://write.corbpie.com/full-screen-image-background-with-text-overlay/*/
-.image-background {
+#image-background{
     height: 100vh;
-    min-height: 500px;
     background-image:  linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)
       ),url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122619/rome-1968149_1920_zp73em.jpg); 
     background-size: cover;
     background-position: center;
+    
   }
+
+.text-home{
+    position: absolute !important;
+}
 
 .navbar-nav {
     margin-left: auto;
@@ -62,7 +69,3 @@ a{
 }
 
 
-/*footer*/
-footer{
-    height: 9%;
-}
