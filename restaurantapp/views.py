@@ -14,8 +14,8 @@ def index(request):
 def no_user_signin_or_book(request):
     return render(request, 'restaurantapp/no_user_signin_or_book.html')
    
-def profile(request):
-    return render(request, 'restaurantapp/profile.html')
+def about(request):
+    return render(request, 'restaurantapp/about.html')
 
 def menu(request):
     return render(request, 'restaurantapp/menu.html')

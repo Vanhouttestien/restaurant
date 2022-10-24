@@ -6,8 +6,8 @@ from .views import Orders, OrderDetail, CreateBooking, UpdateBooking, CancelBook
 urlpatterns = [
     # path('login/',CostumLoginView.as_view(), name='login'),
     path('', views.index, name='index'),
-     path('no_user_signin_or_book/', views.no_user_signin_or_book, name='no_user_signin_or_book'),
-    path('profile/', views.profile, name='profile'),
+    path('no_user_signin_or_book/', views.no_user_signin_or_book, name='no_user_signin_or_book'),
+    path('about/', views.about, name='about'),
     path('menu/', views.menu, name='menu'),
     path('orders/', Orders.as_view(), name='orders'),
     path('order_detail/<int:pk>/', OrderDetail.as_view(), name='order_detail'),
