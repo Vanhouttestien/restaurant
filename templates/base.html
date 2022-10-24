@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <header >
+<body class="">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,12 +61,12 @@
             </div>
           </nav>
     </header>
-    <main class="flex-shrink-0 main-bg">
+    <main class="">
         {% block content %}
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
-    <footer class="mt-auto text-center text-lg-start text-muted">
+    <footer class="fixed-bottom text-center text-lg-start text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           <!-- Left -->

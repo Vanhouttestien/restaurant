@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fuzzy+Bubbles&family=Montserrat&display=swap');
 body, html{
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
     color: lightgray;
     background-color: #191919;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
 }
 
 .navbar-brand{
@@ -46,9 +47,8 @@ a{
     border: 2px solid darkred;
     color: white;
 }
+
 /* css for book.html (book a table form) */
-
-
 .form{
     background-color: rgba(255,255,255,0.8);
     margin: 10% 0;
@@ -69,3 +69,57 @@ a{
 }
 
 
+/* Menu*/
+
+#bg-menu{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665920557/pizza-2643374_1920_dnthgk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+
+}
+.menu-price{
+    display: inline;
+    position: absolute;
+    right: 5%;
+}
+
+.menu-text{
+    color: darkgray;
+    font-style: italic;
+}
+
+.accordion-item {
+    color: antiquewhite;
+}
+
+.accordion{
+    --bs-accordion-bg: #221e1e; 
+    --bs-accordion-btn-focus-border-color: darkred;
+    --bs-accordion-btn-focus-box-shadow: darkred;
+    padding: 4%;
+    position: relative;
+    z-index: 5000;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.accordion-header{
+    --bs-accordion-active-bg: #333131;
+    --bs-accordion-active-color: antiquewhite;
+    --bs-accordion-color:antiquewhite ;
+    color: antiquewhite !important;
+}
+.accordion-button{
+    color: antiquewhite !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+ }
+
+footer{
+    z-index: 10 !important;
+}

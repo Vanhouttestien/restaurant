@@ -8,7 +8,7 @@ class DateInput(forms.DateInput):
 class ReservationForm(forms.ModelForm):
     class Meta: 
         model = Reservation
-        fields = [ 'timeslot',  'date', 'number_of_people', 'comments']
+        fields = [ 'date', 'timeslot',  'number_of_people', 'comments']
         widgets = {
             'date': DateInput()
         }

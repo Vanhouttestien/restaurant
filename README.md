@@ -6,3 +6,4 @@ update, create and delete view: https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 footer: https://mdbootstrap.com/docs/standard/navigation/footer/
 
 background home page: Image by user32212 from Pixabay https://pixabay.com/photos/rome-roma-italy-cafe-italian-1968149/
+color arrow accordion bootstrap https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap
