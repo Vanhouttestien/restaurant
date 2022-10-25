@@ -2,6 +2,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
+
 <div class="container">
 {% if request.user.is_authenticated %}
     <h2 class="mt-5"> Reservations: {{request.user}}</h2>
@@ -27,12 +28,15 @@
     <td>{{order.number_of_people}}</td>
     <td><a class="btn-order" href="{% url 'order_detail' order.id %}">View</a></td>
     <td><a class="btn-order" href="{% url 'update_booking' order.id %}">Edit</a></td>
-    <td><a class="btn-order" href="{% url 'delete_booking' order.id %}" >Cancel</a></td>
+    <td><a class="btn-order" href="{% url 'delete_booking' order.id %}">Cancel</a></td>
 </tr>
 {% empty %}
 <h3>No orders</h3>
 {% endfor %}
 </table>
 </div>
-<a href="{% url 'book' %}" class="btn btn-home btn-end">Book a table</a>
+<div class="text-center">
+    <a href="{% url 'book' %}" class="btn btn-danger">Book a table</a>
+</div>
+
 {% endblock %}</div>

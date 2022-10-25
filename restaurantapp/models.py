@@ -50,7 +50,7 @@ class Reservation(models.Model):
     date = models.DateField("Date")
     number_of_people = models.IntegerField("Number of Guests")
     created_on = models.DateTimeField(auto_now_add=True)
-    timeslot = models.CharField("Time",max_length=8, choices=TIME_CHOICES)
+    timeslot = models.CharField("Time", max_length=8, choices=TIME_CHOICES)
     comments = models.TextField("Anything else? (Allergies, Special Dietary Wishes,...)", blank = True, null =True)
 
     class Meta:
