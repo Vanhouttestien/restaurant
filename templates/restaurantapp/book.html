@@ -5,13 +5,20 @@
 
 
 <div class="row col-md-8 offset-md-2" >
+  {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
   <div class="form">
     <form method="POST" action="">
       <h1>Book a table</h1>
       {% csrf_token %}
       {{ form|crispy }}
       <br>
-      <button type="submit" class="btn btn-secondary">Submit</button>
+      <button type="submit" class="btn btn-danger">Submit</button>
       <br>
     </form>
 

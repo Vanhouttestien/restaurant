@@ -1,7 +1,6 @@
 # Restaurant 
 
-With the current climate change the face of the Artic is rapidly changing. The Arctic is being hit hard and the impacts of climate change on the local flora and fauna is huge. Small children don't know a lot about the artic. The Artic quiz was developed for children to improve their knowledge about the artic and stimulate their curiosity in a fun and interactive way. In this way we hope to contribute to the overall conscience of the people, by making the arctic more visible and improve knowledge. 
-
+The 
 
 <img src="assets/images/mockup.jpg" alt="Picture of webpage across different devices" width="600px">
 
@@ -26,24 +25,23 @@ With the current climate change the face of the Artic is rapidly changing. The A
 1. wireframe
 
 2. Database
-For the design there was chosen for a colourful background with a more sober layout to balans it. This keeps it playful but also accesible at the same time.  
+Two database models where used. One if the costumer was logged in and one for those who aren't logged in. 
 
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666725185/Schermafbeelding_2022-10-25_211238_g7gcy6.jpg" alt="picture explenation box" width="600px">
 
 3. Images
 
-To support the topic of the quiz a image of the artic and the aurora borealis was chosen as background. 
-
-Some questions are accompagnied by images as part of the question or for decorative purpose. 
-
+Images where used to support visual experience of the restaurant and make a clear picture of what they do. 
 
 4. Colour Scheme
 
-Beacuse of the colourful background image the other parts of the design where kept simple. The colours black and white where chosen for this. They also provide optimal accesibilty. 
-
+As a color scheme there was chosen to go for a dark theme with gray text. Red accents where used to pull attention to certain places and add some colourful and playful accents. For the brand name a gold color was chosen.  
 
 5. Typography
 
-The font chosen is Arial and Helvetica as back-up. These fonts are easy to read and provide good accesibility. They are also simple in design and provide a more sober contrast to the colorful background image. 
+Fuzzy Bubbles: menu card
+Cinzel: 
+Roboto: 
 
 ## Technologies used 
 ### languages

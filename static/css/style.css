@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fuzzy+Bubbles&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fuzzy+Bubbles&family=Roboto:wght@300&display=swap');
 body, html{
     padding: 0;
     margin: 0;
-    font-size: 16px;
-    color: lightgray;
+    font-size: 14Spx;
+    color: rgb(182, 166, 166);
     background-color: #191919;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Roboto', sans-serif;
     height: 100vh;
 }
 
@@ -37,7 +37,7 @@ a:hover{
 }
 
 .text-home{
-    position: absolute !important;
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .navbar-nav {
@@ -53,9 +53,9 @@ a:hover{
 
 /* css for book.html (book a table form) */
 .form{
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(54, 50, 50, 0.8);
     margin: 10% 0;
-    color: #191919;
+    color: #fef8f8;
     width: 70%;
     margin-left: 15%;
     padding: 2%;
@@ -122,10 +122,6 @@ a:hover{
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
-footer{
-    z-index: 10 !important;
-}
-
 /*about*/
 img{
     height: 250px; 
@@ -160,10 +156,14 @@ img{
 }
 
 /* center  middle page  source: https://reactgo.com/bootstrap-center-div-horizontally-vertically/ */
-
 .center{
     position:absolute;
     left:50%;
     top:50%;
     transform:translate(-50%, -50%);
+ }
+
+ /* footer */
+ footer{
+    height: 50px;
  }

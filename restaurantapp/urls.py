@@ -1,10 +1,8 @@
 from . import views
 from django.urls import path
 from .views import Orders, OrderDetail, CreateBooking, UpdateBooking, CancelBooking, CreateBookingNoUser
-# CostumLoginView
 
 urlpatterns = [
-    # path('login/',CostumLoginView.as_view(), name='login'),
     path('', views.index, name='index'),
     path('no_user_signin_or_book/', views.no_user_signin_or_book, name='no_user_signin_or_book'),
     path('about/', views.about, name='about'),
@@ -16,4 +14,3 @@ urlpatterns = [
     path('update_booking/<int:pk>/', UpdateBooking.as_view(), name='update_booking'),
     path('delete_booking/<int:pk>/', CancelBooking.as_view(), name='delete_booking'),
 ]
- 

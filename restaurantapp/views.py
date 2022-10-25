@@ -7,9 +7,13 @@ from . forms import ReservationForm, ReservationNoUserForm
 from django.forms import ModelForm
 from django.contrib.auth.models import User
 from datetime import date
+from django.contrib import messages
+from django.shortcuts import render
+
 
 def index(request):
-    return render(request,'restaurantapp/index.html')
+    return render(request, 'restaurantapp/index.html')
+
 
 def no_user_signin_or_book(request):
     return render(request, 'restaurantapp/no_user_signin_or_book.html')
@@ -32,12 +36,6 @@ class Orders(LoginRequiredMixin, ListView):
         context['orders'] = context['orders'].filter(user=self.request.user, date__gte=date.today())
         return context
 
-# class CreateBooking(ModelForm):
-#     class Meta:
-#         model = Reservation
-#         fields = '__all__'
-
-
 # class based on https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 class OrderDetail(LoginRequiredMixin, DetailView):
     model = Reservation
@@ -48,24 +46,34 @@ class OrderDetail(LoginRequiredMixin, DetailView):
 class CreateBooking(LoginRequiredMixin, CreateView):
     form_class = ReservationForm
     template_name = 'restaurantapp/book.html'
-    success_url = reverse_lazy('orders')
+    success_url = reverse_lazy('index')
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(self.request, 'Thank you for your booking.')
         return super(CreateBooking, self).form_valid(form)
 
 class CreateBookingNoUser(CreateView):
     form_class = ReservationNoUserForm
     template_name = 'restaurantapp/book_no_user.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('index')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        messages.success(self.request, 'Thank you for your booking.')
+        return super(CreateBookingNoUser, self).form_valid(form)
 
 # class based on https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 class UpdateBooking(LoginRequiredMixin, UpdateView):
     model = Reservation
-    # future = Reservation.objects.filter(date__gte=date.today())
+    form_class = ReservationForm
     template_name = 'restaurantapp/book.html'
-    fields = ['date', 'timeslot', 'number_of_people', 'comments']
     success_url = reverse_lazy('orders')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        messages.success(self.request, 'Your booking is updated.')
+        return super(UpdateBooking, self).form_valid(form)
 
 # class based on https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
 class CancelBooking(LoginRequiredMixin, DeleteView):
