@@ -30,9 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-
 x_FRAME_OPTIONS = 'SAMEORIGIN'
-
 ALLOWED_HOSTS = ['restaurantapp123.herokuapp.com', 'localhost']
 
 
@@ -108,6 +106,16 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'restaurant.wsgi.application'
+
+# Database
+# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
