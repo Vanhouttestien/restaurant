@@ -1,42 +1,23 @@
 {% extends 'base.html' %}
-
 {% block content %}
 
-
-
 <div class="card center text-bg-dark">
-    <div class="card-header">
-    </div>
-    <div class="card-body">
-      <blockquote class="blockquote mb-0">
-        <form method="POST">
-            {% csrf_token %}
-            <div class="container text-lg-end">
-            <p>Are you sure you want to cancel your booking?</p>
-           <div>
-           <input class="btn btn-home" type="submit" value="Confirm">
-           <a  class=" btn btn-home" href="{% url 'orders' %}">Go back</a>
-           </div>
-        </div>
-        </form>
-      </blockquote>
-    </div>
+  <div class="card-header">
   </div>
-
-<!-- <div class="center">
-
-
-
-    <form method="POST">
-    {% csrf_token %}
-    <div class="container text-lg-end">
-    <p>Are you sure you want to cancel your booking?</p>
-   <div>
-   <input class="btn btn-home" type="submit" value="Confirm">
-   <a  class=" btn btn-home" href="{% url 'orders' %}">Go back</a>
-   </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <form method="POST">
+        {% csrf_token %}
+        <div class="container text-lg-end">
+          <p>Are you sure you want to cancel your booking?</p>
+          <div>
+            <input class="btn btn-danger" type="submit" value="Confirm">
+            <a  class=" btn btn-danger" href="{% url 'orders' %}">Go back</a>
+          </div>
+        </div>
+      </form>
+    </blockquote>
+  </div>
 </div>
-</form>
-</div> -->
 
 {% endblock %}

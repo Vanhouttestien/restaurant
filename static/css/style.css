@@ -2,7 +2,7 @@
 body, html{
     padding: 0;
     margin: 0;
-    font-size: 14Spx;
+    font-size: 16px;
     color: rgb(182, 166, 166);
     background-color: #191919;
     font-family:'Roboto', sans-serif;
@@ -33,13 +33,6 @@ a:hover{
 
 .navbar-nav {
     margin-left: auto;
-}
-
-.btn-home{
-    margin: 10px;
-    color: none;
-    border: 2px solid darkred;
-    color: white;
 }
 
 /* css for book.html (book a table form) */
@@ -83,6 +76,10 @@ a:hover{
     --bs-accordion-active-color: antiquewhite;
     --bs-accordion-color:antiquewhite ;
     color: antiquewhite !important;
+}
+
+.accordion-button{
+    font-size: 54px;
 }
 
 .accordion-button{

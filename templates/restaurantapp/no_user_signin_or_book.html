@@ -1,21 +1,18 @@
-
-    {% extends 'base.html' %}
-    {% block content %}
+{% extends 'base.html' %}
+{% block content %}
     
     <div class="card center text-center text-bg-dark">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>You are not logged in. With an account you can manage your own bookings. You can update or delete a reservation online. 
-            </p>
-<p>would you like to proceed without an account? </p>
-<a class="btn  btn-danger" href="{% url 'book_no_user' %}" role="button">Yes, book without an account</a>
-<a class="btn  btn-danger" href= "{% url 'account_signup' %}" role="button">No, login</a>
-          </blockquote>
-        </div>
+      <div class="card-header"></div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>You are not logged in. With an account you can manage your own bookings. You can update or delete a reservation online. </p>
+          <p>would you like to proceed without an account? </p>
+          <a class="btn  btn-danger" href="{% url 'book_no_user' %}" role="button">Yes, book without an account</a>
+          <a class="btn  btn-danger" href= "{% url 'account_signup' %}" role="button">No, login</a>
+        </blockquote>
       </div>
+    </div>
     
 
 
-    {% endblock %}
+{% endblock %}

@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {%load crispy_forms_tags %}
 {% block content %}
-
 <style>
   body {
     background-image: linear-gradient(
@@ -14,10 +13,9 @@
   }
 </style>
 
-
 <div class="row col-md-8 offset-md-2" >  
   <div class="form">
-    <form method="POST" action="">
+    <form method="POST">
       <h1>Book a table</h1>
       {% csrf_token %}
       {{ form|crispy }}
@@ -25,7 +23,8 @@
       <button type="submit" class="btn btn-danger">Submit</button>
       <br>
     </form>
-
-{% endblock %}
   </div>
 </div>
+
+
+{% endblock %}

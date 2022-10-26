@@ -2,6 +2,8 @@
 
 The website is a restaurant website for a restaurant called Il Cucchiaio d'Oro. It has two main purposes. First, to gain visibility. People can find the restaurant online and no what they do and where they stand for. Secondly, it provides the tools for costumers to make online bookings and if they signup to manage their bookings.  
 
+The live website can be found [here](https://restaurantapp123.herokuapp.com/)
+
 <img src="assets/images/mockup.jpg" alt="Picture of webpage across different devices" width="600px">
 
 ##  Table of content
@@ -70,15 +72,10 @@ Roboto:
 
 ## Technologies used 
 ### languages
-Languages
 Python
 JavaScript
 HTML5
 CSS3
-
-
-
-Testing
 
 ### Frameworks, Libraries & Programs Used
 - Git: Git was use commit and push to github 
@@ -89,29 +86,57 @@ Testing
 - [Google Fonts](fonts.google.com/): Google fonts was used for the fontstyles
 - [Bootstrap](https://getbootstrap.com/): Bootstrap was used for frontend design
 - [cloudinary](https://cloudinary.com/): was used to store images and static files.
-- [Heroku](https://www.heroku.com/)
-- [PostgreSQL](https://www.postgresql.org/)
+- [Heroku](https://www.heroku.com/): Heroku was used for the deployment
+- [PostgreSQL](https://www.postgresql.org/): PosgreSQL was used as database 
 
 ## Features
-### Instructions
-The first visible elements when you load the page are some explinations, so you know what it is about. A big start button is underneath it. 
+### Navbar
+
+
+<img src="assets/images/startpage.jpg" alt="picture explenation box" width="600px">
+
+### Footer
+
 
 <img src="assets/images/startpage.jpg" alt="picture explenation box" width="600px">
 
 
-### Questions
+### Homepage
+
+
+<img src="assets/images/startpage.jpg" alt="picture explenation box" width="600px">
+
+
+### About us
 When you have pressed start you are presented with the question and possible answers. Some questions are accompagnied with a image to the right (or underneath on smaller devices). 
 
 <img src="assets/images/question.jpg" alt="picture question" width="600px">
 
 
-### Questions with direct feedback 
+### Menu 
 When you have chosen an answer you get instant feedback on which answers are wrong and which are correct. Also, the next button appears to go to the next question. 
 
 <img src="assets/images/questionfeedback.jpg" alt="picture of answers with wrong and right symbols" width="600px">
 
 
-### Feedback en score
+### Register 
+In this box the score is presented with some short feedback. 
+
+<img src="assets/images/feedback.jpg" alt="picture of score and feedback" width="600px">
+
+### Login
+When you have pressed start you are presented with the question and possible answers. Some questions are accompagnied with a image to the right (or underneath on smaller devices). 
+
+<img src="assets/images/question.jpg" alt="picture question" width="600px">
+
+
+### Signout
+When you have chosen an answer you get instant feedback on which answers are wrong and which are correct. Also, the next button appears to go to the next question. 
+
+<img src="assets/images/questionfeedback.jpg" alt="picture of answers with wrong and right symbols" width="600px">
+
+
+###  
 In this box the score is presented with some short feedback. 
 
 <img src="assets/images/feedback.jpg" alt="picture of score and feedback" width="600px">
