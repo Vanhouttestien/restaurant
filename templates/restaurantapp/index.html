@@ -1,7 +1,21 @@
-<div id="image-background">
+
 {% extends 'base.html' %}
 {% block content %}
-      <div class='row h-100 align-items-center'>
+<style>
+  body {
+      background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122619/rome-1968149_1920_zp73em.jpg); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    width: 100vw; 
+    min-height: 100vh; 
+  }
+</style>
+<div class="container center">
+      <div class='row align-items-center'>
         <div class='col-md text-center'></div>
         <div class='col-md text-center'>
           <div class="container">
@@ -14,6 +28,6 @@
         </div>
       </div>
       <div class='col-md text-center'></div>
+    </div>
 {% endblock %}
-</div>
 </div>

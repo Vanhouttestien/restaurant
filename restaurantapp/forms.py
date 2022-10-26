@@ -42,7 +42,7 @@ class ReservationNoUserForm(forms.ModelForm):
     def clean_number_of_people(self):
         number_of_people = self.cleaned_data['number_of_people']
         if number_of_people > 15:
-            raise forms.ValidationError("For a reservation for more than 15 persons send a mail to il_cucchiaio_d'oro@gmail.com or call +447975777666")
+            raise forms.ValidationError("For a reservation for more than 15 persons send an email to il_cucchiaio_d'oro@gmail.com or call +447975777666")
         return number_of_people
 
 # class from https://www.geeksforgeeks.org/python-extending-and-customizing-django-allauth/

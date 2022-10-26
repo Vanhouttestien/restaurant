@@ -1,9 +1,19 @@
-<div id="bg-bookingform">
   {% extends 'base.html' %}
   {%load crispy_forms_tags %}
   {% block content %}
     
-    
+  <style>
+    body {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122855/sunset-3817287_1920_gxn9ky.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+
     <div class="row col-md-8 offset-md-2" >
       
       <div class="form">
@@ -19,4 +29,3 @@
     </div>
 
   {% endblock %}
-  </div>

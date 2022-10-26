@@ -6,7 +6,7 @@ body, html{
     color: rgb(182, 166, 166);
     background-color: #191919;
     font-family:'Roboto', sans-serif;
-    height: 100vh;
+    height: auto;
 }
 
 .navbar-brand{
@@ -27,17 +27,6 @@ a:hover{
 
 /*Homepage*/
 /*CSS for  full page background and text overlay from: https://write.corbpie.com/full-screen-image-background-with-text-overlay/*/
-#image-background{
-    background-image:  linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ),url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122619/rome-1968149_1920_zp73em.jpg); 
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    background-attachment: fixed;
-}
-
 .text-home{
     font-family: 'Fuzzy Bubbles', cursive;
 }
@@ -63,28 +52,8 @@ a:hover{
     padding: 2%;
 }
 
-#bg-bookingform{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122855/sunset-3817287_1920_gxn9ky.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 
 /* Menu*/
-
-#bg-menu{
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665920557/pizza-2643374_1920_dnthgk.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 150vh;
-}
-
 .menu-price{
     display: inline;
     position: absolute;
@@ -141,7 +110,6 @@ img{
 /* orders*/
 #bg-order{
     min-height: 100vh;
-    
 }
 
 .btn-order{

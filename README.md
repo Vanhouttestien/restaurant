@@ -1,6 +1,6 @@
 # Restaurant 
 
-The 
+The website is a restaurant website for a restaurant called Il Cucchiaio d'Oro. It has two main purposes. First, to gain visibility. People can find the restaurant online and no what they do and where they stand for. Secondly, it provides the tools for costumers to make online bookings and if they signup to manage their bookings.  
 
 <img src="assets/images/mockup.jpg" alt="Picture of webpage across different devices" width="600px">
 
@@ -14,15 +14,40 @@ The
 
 ## User Experience (UX)
 ### User stories
-#### Visitor goals
-- The main goal is to provide the users with more information about the Arctic
-- The user should have good insight in the content when viewing the startpage
-- The user should have an intutive and easy accesible buttons to start the quiz
-- The user should receive direct feedback on the answer
-- The user should have the possiblity to restart the quiz and try to improve
+#### User Goals
+- As a site user I can create an account so that manage my bookings
+- As a Site User I can place reservations so that so I can choose a time and date to visit the restaurant 
+- As a Site user I can edit my reservation so that change time, date, or number of people
+- As a Site User I can delete my reservation so that I can cancel my table
+- As a Site User I can book a table without an account so that I can make a reservation
+
+#### admin 
+
 
 ### Design 
 1. wireframe
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe1_odtmzm.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797184/wireframe2_osb0zi.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797046/wireframe3_kfc6sa.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797046/wireframe4_zrlgtj.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797046/wireframe5_ti5coq.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797046/wireframe6_ktpsih.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797046/wireframe7_ldhsvz.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe8_tcf6ay.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe9_vixyya.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe10_pklggn.jpg" alt="picture explenation box" width="300px">
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe11_z940c1.jpg" alt="picture explenation box" width="300px">
 
 2. Database
 Two database models where used. One if the costumer was logged in and one for those who aren't logged in. 
@@ -45,10 +70,6 @@ Roboto:
 
 ## Technologies used 
 ### languages
-- CSS
-- HTML
-- Javascript
-
 Languages
 Python
 JavaScript
@@ -56,34 +77,20 @@ HTML5
 CSS3
 
 
-Frameworks, Libraries, Programs
-Python Built-in Modules: os
-External Packages
 
-cloudinary
-dj-database-url
-dj3-cloudinary-storage
-Django
-django-allauth
-gunicorn
-psycopg2
-Programs & Tools
-
-Google Fonts: Was used to to incorporate font styles.
-Bootstrap: Was used to create the front-end design.
-GitPod:
-Gitpod was used as IDE to commit and push the project to GitHub.
-GitHub:
-Was used for all storing and backup of the code pertaining to the project.
-Balsamiq:
-Was used to create wireframes
-LucidCharts:
-Was used to create the database schema.
 Testing
+
 ### Frameworks, Libraries & Programs Used
 - Git: Git was use commit and push to github 
 - [GitPod](https://gitpod.io/): Gitpod was used as development environment 
 - [GitHub](https://github.com/): Github was used to deploy the site and store it  
+- [Balsamiq](https://balsamiq.com/): used to create wireframes
+- [LucidCharts](https://www.lucidchart.com/): used to create the database schema.
+- [Google Fonts](fonts.google.com/): Google fonts was used for the fontstyles
+- [Bootstrap](https://getbootstrap.com/): Bootstrap was used for frontend design
+- [cloudinary](https://cloudinary.com/): was used to store images and static files.
+- [Heroku](https://www.heroku.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ## Features
 ### Instructions
