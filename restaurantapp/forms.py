@@ -26,24 +26,24 @@ class ReservationForm(forms.ModelForm):
         return number_of_people
 
 class ReservationNoUserForm(forms.ModelForm):
-    class Meta: 
+    class Meta:
         model = ReservationNoUser
         fields = [ 'fname', 'lname', 'email', 'timeslot',  'date', 'number_of_people', 'comments']
         widgets = {
             'date': DateInput()
         }
 
-        def clean_date(self):
-            date = self.cleaned_data['date']
-            if date < datetime.date.today():
-                raise forms.ValidationError("The date cannot be in the past!")
-            return date
+    def clean_date(self):
+        date = self.cleaned_data['date']
+        if date < datetime.date.today():
+            raise forms.ValidationError("The date cannot be in the past!")
+        return date
 
-        def clean_number_of_people(self):
-            number_of_people = self.cleaned_data['number_of_people']
-            if number_of_people > 15:
-                raise forms.ValidationError("For a reservation for more than 15 persons send a mail to il_cucchiaio_d'oro@gmail.com or call +447975777666")
-            return number_of_people
+    def clean_number_of_people(self):
+        number_of_people = self.cleaned_data['number_of_people']
+        if number_of_people > 15:
+            raise forms.ValidationError("For a reservation for more than 15 persons send a mail to il_cucchiaio_d'oro@gmail.com or call +447975777666")
+        return number_of_people
 
 # class from https://www.geeksforgeeks.org/python-extending-and-customizing-django-allauth/
 

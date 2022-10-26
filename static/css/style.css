@@ -34,6 +34,8 @@ a:hover{
       ),url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666122619/rome-1968149_1920_zp73em.jpg); 
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .text-home{
