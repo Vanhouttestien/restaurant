@@ -92,3 +92,8 @@ class CancelBooking(LoginRequiredMixin, DeleteView):
     model = Reservation
     context_object_name = 'order'
     success_url = reverse_lazy('orders')
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        messages.success(self.request, 'Your booking was canceled.')
+        return super(CancelBooking, self).form_valid(form)
