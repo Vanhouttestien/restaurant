@@ -1,6 +1,6 @@
 # Restaurant 
 
-The website is a restaurant website for a restaurant called Il Cucchiaio d'Oro. It has two main purposes. First, to gain visibility. People can find the restaurant online and know what they do and where they stand for. Secondly, it provides the tools for customers to make online bookings and if they signup to manage their bookings.  
+The website is for a restaurant called Il Cucchiaio d'Oro. It has two main purposes. First, to gain visibility. People can find the restaurant online and know what they do and what they stand for. Secondly, it provides the tools for customers to make online bookings and if they sign up to manage their bookings.  
 
 The live website can be found [here](https://restaurantapp123.herokuapp.com/)
 
@@ -16,17 +16,17 @@ The live website can be found [here](https://restaurantapp123.herokuapp.com/)
 
 ## User Experience (UX)
 ### User stories
-- As a site user I can create an account so that manage my bookings
-- As a Site User I can place reservations so that I can choose a time and date to visit the restaurant 
-- As a Site user I can edit my reservation so that change the time, date, or number of people
-- As a Site User I can delete my reservation so that I can cancel my table
-- As a Site User I can book a table without an account so that I can make a reservation
-- As a Site User I receive visual feedback when a form is sent so that I know it was successful
+- As a site user I can create an account so I can manage my bookings
+- As a site user I can place reservations so that I can choose a time and date to visit the restaurant 
+- As a site user I can edit my reservation so I change the time, date, or number of people
+- As a site user I can delete my reservation so that I can cancel my booked table
+- As a site user I can book a table without an account so that I can make a reservation
+- As a site user I receive visual feedback when a form is sent so that I know it was successful
 
 ### Design 
 The design tries to create a simple and traditional feel combined with some playful joyful elements. 
 
-1. wireframe
+1. Wireframe
 
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe1_odtmzm.jpg" alt="picture explenation box" width="300px">
 
@@ -53,7 +53,7 @@ The design tries to create a simple and traditional feel combined with some play
 2. Database
 Two database models were used. One for the customers who are logged in and one for those who aren't logged in. 
 
-<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666725185/Schermafbeelding_2022-10-25_211238_g7gcy6.jpg" alt="picture explenation box" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666725185/Schermafbeelding_2022-10-25_211238_g7gcy6.jpg" alt="picture explenation box" width="300px">
 
 3. Images
 
@@ -116,7 +116,7 @@ The footer consists of links to social media channels.
 
 ### Homepage
 
-The homepage consists of a background image to showcase the outside of the restaurant. A button to make a booking, for logged-in users, refers them to the booking page for logged-in users. non-logged-in users get a page where they are asked if they would like to proceed with a login.  
+The homepage consists of a background image to showcase the outside of the restaurant. A button to make a booking, for logged-in users, refers them to the booking page. Non-logged-in users get a page where they are asked if they would like to proceed with a login.  
 
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/homepage_dxegry.jpg" alt="picture homepage" width="600px">
 
@@ -171,38 +171,38 @@ When a user is not logged in the form also asks for first name, last name, and e
 ### User stories
 
 - As a site user I can create an account so that manage my bookings
-- As a Site User I can place reservations so that  I can choose a time and date to visit the restaurant 
-- As a Site user I can edit my reservation so that change the time, date, or number of people
-- As a Site User I can delete my reservation so that I can cancel my table
-- As a Site User I can book a table without an account so that I can make a reservation
-- As a Site User I receive visual feedback when a form is sent so that I know it was successful
+- As a site user I can place reservations so that  I can choose a time and date to visit the restaurant 
+- As a site user I can edit my reservation so that change the time, date, or number of people
+- As a site user I can delete my reservation so that I can cancel my table
+- As a site user I can book a table without an account so that I can make a reservation
+- As a site user I receive visual feedback when a form is sent so that I know it was successful
 
 ## manual code testing
 ### Navbar
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891911/testnavbar_q4oykm.jpg" alt="navbar test" width="600px">
 
 ### Footer
-<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891905/testfooter_sciuwv.jpg" alt="footer test" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891905/testfooter_sciuwv.jpg" alt="footer test" width="400px">
 
 ### Homepage
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891910/testhomepage_mffmm5.jpg" alt="homepage test" width="600px">
 
 ### Menu 
 
-<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891911/testmenu_xpsab9.jpg" alt="test menu" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891911/testmenu_xpsab9.jpg" alt="test menu" width="300px">
 
 ### My reservations 
-<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666893599/testreservations_vmvmro.jpg" alt="test reservation list" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666893599/testreservations_vmvmro.jpg" alt="test reservation list" width="500px">
 
 #### delete
-<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666893598/testcancel_zgqzc1.jpg" alt="cancel test" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666893598/testcancel_zgqzc1.jpg" alt="cancel test" width="500px">
 
 #### update 
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666893599/testupdate_t9hwzf.jpg" alt="test update" width="600px">
 
 ### Logout
 
-<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666892794/testsignout_sagkko.jpg" alt="signout test" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666892794/testsignout_sagkko.jpg" alt="signout test" width="500px">
 
 ### Book a table (user)
 
@@ -224,7 +224,7 @@ When a user is not logged in the form also asks for first name, last name, and e
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666891906/testproceedorlogin_hnekxn.jpg" alt="test login" width="600px">
 
 ### responsiveness
-Because the website utilizes a bootstrap framework which is based on a mobile-first approach is the website responsive. 
+Because the website utilizes a bootstrap framework which is based on a mobile-first approach, the is website responsive. 
 The website is adapted to be seen on different screen sizes.  
 The responsiveness of the website was first tested by chrome developer tools. 
 Different breakpoints were used to view the website. 
@@ -243,13 +243,13 @@ The website was tested in different browsers.
 1. HTML
 No errors were found by the official W3C validator
 
-<img src="assets/images/htmlval.jpg" alt="picture of W3C validator results" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666896125/htmlvalidator_gqgh2c.jpg" alt="picture of W3C validator results" width="600px">
 
 
 2. CSS
 No errors were found by the official Jigsaw validator
 
-<img src="assets/images/cssval.jpg" alt="picture of Jigsaw validator results" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666896125/cssval_mmbhlr.jpg" alt="picture of Jigsaw validator results" width="600px">
 
 
 ### Fixed bugs 

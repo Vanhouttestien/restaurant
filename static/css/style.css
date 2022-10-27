@@ -7,9 +7,25 @@ body, html{
     background-color: #191919;
     font-family:'Roboto', sans-serif;
     height: auto;
-    min-height: 100;
+    min-height: 100vh;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(248, 94, 94);
+} 
+
+a:hover{
+    color:  rgb(23, 2, 2);
+} 
+
+/*message alerts*/
+.alert{
+    z-index: 1000;
+}
+
+/*Homepage*/
+/*CSS for  full page background and text overlay from: https://write.corbpie.com/full-screen-image-background-with-text-overlay/*/
 .bg-home{
     position: fixed;
     top:0; 
@@ -29,36 +45,22 @@ body, html{
     z-index: 1;
 }
 
-.navbar-brand{
-    font-family: 'Cinzel', serif;
-    font-size: 26px;
-    color: #d4af37;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(248, 94, 94);
-} 
-
-a:hover{
-    color:  rgb(23, 2, 2);
-} 
-
-.alert{
-    z-index: 1000;
-}
-
-/*Homepage*/
-/*CSS for  full page background and text overlay from: https://write.corbpie.com/full-screen-image-background-with-text-overlay/*/
 .text-home{
     font-family: 'Fuzzy Bubbles', cursive;
 }
 
+/*navbar */
 .navbar{
     z-index: 1000;
 }
 .navbar-nav {
     margin-left: auto;
+}
+
+.navbar-brand{
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    color: #d4af37;
 }
 
 /* css for book.html (book a table form) */
@@ -90,21 +92,19 @@ a:hover{
     padding: 2%;
 }
 
-
 /* Menu*/
-
 .bg-menu{
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7), 
         rgba(0, 0, 0, 0.7)), url(https://res.cloudinary.com/ds6jpxpzy/image/upload/v1665920557/pizza-2643374_1920_dnthgk.jpg);
-        position: fixed;
-        top:0; 
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-size: cover;
-        background-position: center;
-        overflow: hidden;
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
         width: 100vw; 
         min-height: 100vh; 
         color: rgb(182, 166, 166);
