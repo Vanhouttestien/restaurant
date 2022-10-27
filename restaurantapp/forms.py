@@ -42,6 +42,9 @@ class ReservationNoUserForm(forms.ModelForm):
     '''
     class Meta:
         model = ReservationNoUser
+        fname = forms.CharField(required=True)
+        lname = forms.CharField(required=True)
+        email = fname = forms.EmailField(required=True)
         fields = [
             'fname',
             'lname',
