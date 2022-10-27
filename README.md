@@ -4,7 +4,7 @@ The website is a restaurant website for a restaurant called Il Cucchiaio d'Oro. 
 
 The live website can be found [here](https://restaurantapp123.herokuapp.com/)
 
-<img src="assets/images/mockup.jpg" alt="Picture of webpage across different devices" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809155/mockup_s1pvbf.jpg" alt="Picture of webpage across different devices" width="600px">
 
 ##  Table of content
 - [User Experience (UX)](#user-experience--ux-)
@@ -22,11 +22,14 @@ The live website can be found [here](https://restaurantapp123.herokuapp.com/)
 - As a Site user I can edit my reservation so that change time, date, or number of people
 - As a Site User I can delete my reservation so that I can cancel my table
 - As a Site User I can book a table without an account so that I can make a reservation
+- As a Site User I receive visual feedback when a form is send so that I know it was succeful
 
 #### admin 
 
 
 ### Design 
+The design tries to create a simple and traditional feel combined with some playfull joyfull elements. 
+
 1. wireframe
 
 <img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666797047/wireframe1_odtmzm.jpg" alt="picture explenation box" width="300px">
@@ -62,15 +65,19 @@ Images where used to support visual experience of the restaurant and make a clea
 
 4. Colour Scheme
 
-As a color scheme there was chosen to go for a dark theme with gray text. Red accents where used to pull attention to certain places and add some colourful and playful accents. For the brand name a gold color was chosen.  
+As a color scheme there was chosen to go for a traditional simple dark theme with gray text. Red accents where used to pull attention to certain places and add some colourful and playful accents. For the brand name a gold color was chosen to contrast the red.  
 
 5. Typography
 
-Fuzzy Bubbles: menu card
-Cinzel: 
-Roboto: 
+The standard font on the website is ROoboto wich was chosen for it's elegant feel and accecibility. For the logo was chosen for Cinzel wich has a traditional and sipmle feel. 
+
+In the menu card an the herotext on the homepage their was chosen for Fuzzy Bubbles to add some playfulness to the webpage. 
 
 ## Technologies used 
+### Agile Development
+
+To support the development of this project Agile development was used. The Automated Kanban from git was used as project management tool. Small bitsize tasks where added as issues 
+
 ### languages
 Python
 JavaScript
@@ -88,58 +95,77 @@ CSS3
 - [cloudinary](https://cloudinary.com/): was used to store images and static files.
 - [Heroku](https://www.heroku.com/): Heroku was used for the deployment
 - [PostgreSQL](https://www.postgresql.org/): PosgreSQL was used as database 
+- [Django](https://www.djangoproject.com/): Django was used as development [framework 
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html): Django allauth was used for authetification and registration.
+- [django-bootstrap-datepicker](https://pypi.org/project/django-bootstrap-datepicker-plus/): Django bootstrap datepicker was used to create a dapicker in the forms.
+- [django-crispy-forms](https://django-crispy-forms.readthedocs.io/en/latest/): Crispy forms was used to layout the forms
+- [gunicorn](https://gunicorn.org/): Gunicorn was used as HTTP server 
+- [psycopg2](https://pypi.org/project/psycopg2/):PostgreSQL database adapter
 
 ## Features
 ### Navbar
 
+A first feature is the navbar. On the right site is the logo of the restaurant wich is also a link to the homepage. 
 
-<img src="assets/images/startpage.jpg" alt="picture explenation box" width="600px">
+For user who are not logged in the navbar consists of Home, About us, Menu, Register, Login and Book a table. 
+For user's who are logged the navbar consists of Home, About us, Menu, My reservations, Logout and Book a table.
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/navbar_urdwla.jpg" alt="picture navbar" width="600px">
 
 ### Footer
 
+The footer consist of links to the social media channels. 
 
-<img src="assets/images/startpage.jpg" alt="picture explenation box" width="600px">
-
+<img src="ahttps://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/footer_y15nn1.jpg" alt="picture footer" width="600px">
 
 ### Homepage
 
+The homepage consists of a backgroundimage to showcase the outside of the restaurant. A button to make a booking, for logged in users this reffers them to the booking page for logged in users. non-logged in users get a page where they are asked if they would like to proceed with a login.  
 
-<img src="assets/images/startpage.jpg" alt="picture explenation box" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/homepage_dxegry.jpg" alt="picture homepage" width="600px">
 
 
 ### About us
-When you have pressed start you are presented with the question and possible answers. Some questions are accompagnied with a image to the right (or underneath on smaller devices). 
 
-<img src="assets/images/question.jpg" alt="picture question" width="600px">
+The about us page consists of a short history of the restaurant and the vision it puts forward. 
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/about1_wfenho.jpg" alt="about us" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/about2_x8bx2x.jpg" alt="about us part 2" width="600px">
 
 
 ### Menu 
-When you have chosen an answer you get instant feedback on which answers are wrong and which are correct. Also, the next button appears to go to the next question. 
 
-<img src="assets/images/questionfeedback.jpg" alt="picture of answers with wrong and right symbols" width="600px">
+The menu card is a accordion menu. Wich can be folded. It consists of four sections starters, pasta, pizza and deserts. 
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/menu2_osdpad.jpg" alt="picture of answers with wrong and right symbols" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/menu1_fmjmcn.jpg" alt="picture of answers with wrong and right symbols" width="600px">
 
 
 ### Register 
-In this box the score is presented with some short feedback. 
 
-<img src="assets/images/feedback.jpg" alt="picture of score and feedback" width="600px">
+The signup form asks for mailadres, firstname, lastname, username and password. It is generated with allauth. 
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/signup_uskllr.jpg" alt="picture of signup form" width="600px">
 
 ### Login
-When you have pressed start you are presented with the question and possible answers. Some questions are accompagnied with a image to the right (or underneath on smaller devices). 
 
-<img src="assets/images/question.jpg" alt="picture question" width="600px">
+The login form asks for a mailadres and password.
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809155/login_nr5yn9.jpg" alt="picture question" width="600px">
 
 
 ### Signout
-When you have chosen an answer you get instant feedback on which answers are wrong and which are correct. Also, the next button appears to go to the next question. 
+When you click on logout a you get a confirmation page. 
 
-<img src="assets/images/questionfeedback.jpg" alt="picture of answers with wrong and right symbols" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666811935/sign_out_apxwnh.jpg" alt="picture of answers with wrong and right symbols" width="600px">
 
+###  Book a table (loggedin)
 
-###  
-In this box the score is presented with some short feedback. 
+###  Book a table (not loggedin)
+When a user is not logged in the form also asks for firstname, lastname and emailadress. 
 
-<img src="assets/images/feedback.jpg" alt="picture of score and feedback" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809155/book1_gfmbrp.jpg" alt="picture of score and feedback" width="600px">
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809155/book2_hky3fp.jpg" alt="picture of score and feedback" width="600px">
 
 
 
@@ -147,17 +173,40 @@ In this box the score is presented with some short feedback.
 ## testing of the user story
 ### User stories
 
-|Goal| execution|
-|--------------------------------------------------------------------------------------|-------------------------------------------------------|
-|The users should learn more about the arctic| The questions provide some information|
-|The user should have good insight in the content when viewing the startpage| Established with instuctions box and background image|
-|The user should have an intutive and easy accesible buttons to start the quiz| Big start and next button that are easily visible |
-|The user should receive direct feedback on the answer| Direct right and wrong symbols appear when you clicked your answer |
-|The user should have the possiblity to restart the quiz and try to improve| Restart button and questions are randomized|
- 
+- As a site user I can create an account so that manage my bookings
+- As a Site User I can place reservations so that so I can choose a time and date to visit the restaurant 
+- As a Site user I can edit my reservation so that change time, date, or number of people
+- As a Site User I can delete my reservation so that I can cancel my table
+- As a Site User I can book a table without an account so that I can make a reservation
+- As a Site User I receive visual feedback when a form is send so that I know it was succeful
+
 ## manual code testing
+### Navbar
+### Footer
+### Homepage
+### My reservations 
+#### delete
+#### view 
+#### update 
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666816450/testbookingformuser_ybdujf.jpg" alt="picture of score and feedback" width="600px">
+
+### Logout
+### Book a table (user)
+
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666816450/testbookingformuser_ybdujf.jpg" alt="picture bookingsform" width="600px">
+
+### Register 
+### Login
+### Book a table (nonuser)
+### proceed without being logged in? 
+
+
+
+### register 
+
 ### responsiveness
-The website is adapted to be seen on different screen sizes. 
+Because the website utilise bootstrap framework wich is based on a mobile first approach is the website responsive. 
+The website is adapted to be seen on different screen sizes.  
 The responsiveness of the website was first tested by chrome developer tools. 
 Different breakpoints where used to view the website. 
 Next to this the website was viewed on different devices: laptop, tablet and smartphones. 
@@ -173,9 +222,11 @@ The website was tested in different browsers.
 
 ### Validator Testing 
 1. HTML
+One error on pages with background image official W3C validator
 
-No errors where found by the official W3C validator
+<img src="https://res.cloudinary.com/ds6jpxpzy/image/upload/v1666809154/errorhtml_hlckzr.jpg" alt="picture of W3C validator results" width="600px">
 
+No errors where found on other pages by the official W3C validator
 
 <img src="assets/images/htmlval.jpg" alt="picture of W3C validator results" width="600px">
 
@@ -185,73 +236,62 @@ No errors where found by the official Jigsaw validator
 
 <img src="assets/images/cssval.jpg" alt="picture of Jigsaw validator results" width="600px">
 
-3. JSHint 
-No errors where found by the official JSHint validator
-
-<img src="assets/images/jsval.jpg" alt="picture of Jigsaw validator results" width="600px">
 
 4. Lighthouse
-Website was succesful in the lighthouse testing
-
-<img src="assets/images/lighthouseval.jpg" alt="picture of Jigsaw validator results" width="600px">
 
 ### Fixed bugs 
-- The right and wrong images where to big when the answer had more lines because they are implemented by using them as background. This was especially problematic on smaller devices. The symbols came above the text. Fixed by adapting the background size to 28px.   
-- Background image didn't cover the whole page. this was solved by adding a min-height of 100vh and hide the overflow. 
+- in the allowed hosts in settings.py I first used "" instead ''. Because of this I was unable to get the website deployed in Heroku.
+
 
 ### Unfixed bugs
-- by fixing the measurements of the right and wrong symbol they sometimes are a bit to high up. 
+- The styling is applied in the main section to accomplish a full picture background. 
+- It is not yet possible to ask a new password, with you email.   
 
 ## Deployment 
-This site was deployed by GitHub pages. 
 
-To deploy a page you first go to the GitHub repository, then you go to setting. 
-Afterwards you go to the subsection pages. 
-Next go to the source section and select Branch:main. 
-Press save and then you receive a link.  
+This site was deployed with Heroku.
 
-The link can be found here: https://vanhouttestien.github.io/LanguageQuiz/
+### Create the Heroku app
+- Go to the herokuwebsite and create an account or login.
+- when logged in go to Heroku dashboard and click op new, create new app.
+
+### Attach the database
+To attach te posgreSQL database: 
+- Go  to the resources tab and add 'Heroku Postgres'. 
+- Then go to the settings tab and click reveal Config Vars and Copy the database url text. 
+- Then go to gitpod and create an env.py file in the toplevel directory. 
+- In the env.py file add the database_url and choose a secret key. 
+- Add secret key to config vars In heroku 
+- In gitpod in the settings.py file refer to the env.py and add the new database. 
+- Then make migrations
+
+### Get our static and media files stored on Cloudinary.
+
+- Add cloudinary to list of installed apps in settings.py.
+- Let django store media and static files in Cloudinary. 
+- Link file to the templates directory in Heroku. 
+- Change the templates directory to TEMPLATES_DIR
+- Add Heroku to the ALLOWED_HOSTS list. 
+
+- create 3 new folders in the top level directory; media, static, templates
+- and add a procfile in the top level directory. 
+- add code web: gunicorn PROJECT_NAME.wsgi
+
+- Push changes to github and deploy in Heroku. 
 
 ## Credits
-
 ### Images
-- polar bear: Image by 358611 from [Pixabay](https://pixabay.com/photos/polar-bear-bear-sea-bear-white-404314/)
-- artic fox Image by dclobes from [Pixabay](https://pixabay.com/photos/artic-fox-mammal-wildlife-2641974/)
-- pinguin: Image by Siggy Nowak from [Pixabay](https://pixabay.com/photos/penguins-emperor-penguins-baby-429134/)
-- reindeer: Image by Decokon from [Pixabay](https://pixabay.com/photos/svalbard-reindeer-reindeer-svalbard-2144689/)
-- aurora borealis: Image by Noel Bauza from [Pixabay](https://pixabay.com/photos/adventure-aurora-northern-lights-1573331/)
-- arctic icemontain: Image by 358611 from [Pixabay](https://pixabay.com/photos/iceberg-antarctica-polar-ice-sea-404966/)
-- pinguin 2: Image by Edgar Winkler from [Pixabay](https://pixabay.com/photos/penguin-animal-bird-wildlife-zoo-2555024/)
-- polarbear and baby: Image by Ria Sopala from [Pixabay](https://pixabay.com/photos/polar-bear-infant-child-girl-teddy-6819212/)
-- Houses in snow  Image by JaymzArt from [Pixabay](https://pixabay.com/illustrations/christmas-tree-gifts-snowman-4703449/)
-- Reindeer silhouette: Image by Clker-Free-Vector-Images from [Pixabay](https://pixabay.com/vectors/reindeer-animal-pole-north-48519/)
-- wrong symbole: Image by OpenClipart-Vectors from [Pixabay](https://pixabay.com/vectors/abort-delete-no-cancel-locked-146096/) 
-- correct symbole:Image by OpenClipart-Vectors from [Pixabay](https://pixabay.com/vectors/check-mark-tick-mark-check-correct-1292787/)
-- Favicon and logo is from [fontawesome](https://fontawesome.com/)
+Image on booking page: [tables in sunset](https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/) from pixabay 
+Image on homepage: [tables outside on the street](https://pixabay.com/photos/rome-roma-italy-cafe-italian-1968149/) from pixabay
+Image on about us: [Lasagna](https://pixabay.com/photos/lasagna-pasta-meal-italian-kitchen-5994612/) from pixabay 
+Image on about us: [restaurant kitchen](https://pixabay.com/photos/restaurant-kitchen-chefs-cooks-2623071/) from pixabay
+Image on menu page: [Pizza and oven](https://pixabay.com/photos/pizza-stone-oven-fire-wood-fire-2643374/) from pixabay
 
 ### code 
-- The code used was taken from a [youtube tutorial from web dev simplified](https://www.youtube.com/watch?v=riDzcEQbX6k) with some adaptations
-- On the website of the  [w3schools](https://www.w3schools.com/) I found a lot of information and codes for a variety of problems encountered
-- Varies parts of the website were inspired by the love math walkthrough project from Code institute 
+[add databaseform](https://www.youtube.com/watch?v=CVEKe39VFu8)
+[update, create and delete view](https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s)
+[color arrow accordion bootstrap](https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap)
 
 ### others
-- Question about lowest temperature from [World Meteorological Organization's World Weather & Climate Extremes Archive](https://wmo.asu.edu/content/world-lowest-temperature)
-- Question about where penguins live from [Australian Antarctic Program](https://www.antarctica.gov.au/about-antarctica/animals/penguins/#:~:text=Penguins%20are%20only%20found%20in,live%20on%20sub%2DAntarctic%20islands.)
-- Question on danger of polar bears a from [azanimals](https://a-z-animals.com/blog/are-polar-bears-dangerous/)
-- Question on friendlyness of reindeer from [Reindeer Owners and Breeders Association ](https://reindeerowners.com/general-information-about-reindeer/#:~:text=Farm%20raised%20reindeer%20are%20curious,feed%20and%20train%20to%20pull.)
-- Question on meaning of arctic from [wikipedia](https://en.wikipedia.org/wiki/Arctic)
-- [Mock-up generator](https://techsini.com/multi-mockup/)
-- Martina Terlevic:  Code Institute Mentor.
-
-
-
-form: https://www.youtube.com/watch?v=CVEKe39VFu8
-
-update, create and delete view: https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s
-
-footer: https://mdbootstrap.com/docs/standard/navigation/footer/
-
-background home page: Image by user32212 from Pixabay https://pixabay.com/photos/rome-roma-italy-cafe-italian-1968149/
-color arrow accordion bootstrap https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap
-
-Image by <a href="https://pixabay.com/users/stocksnap-894430/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2623071">StockSnap</a> from <a href="https://pixabay.com//?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2623071">Pixabay</a>
+Ruben Klein: writing of the menu. 
+Martina Terlevic:  Code Institute Mentor.

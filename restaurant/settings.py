@@ -59,7 +59,8 @@ ACCOUNT_FORMS = {
 }
 
 ACCOUNT_EMAIL_REQUIRED = True
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
 ACCOUNT_EMAIL_VERIFICATION = "none"
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
