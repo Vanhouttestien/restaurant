@@ -201,9 +201,6 @@ When a user is not logged in the form also asks for firstname, lastname and emai
 ### proceed without being logged in? 
 
 
-
-### register 
-
 ### responsiveness
 Because the website utilise bootstrap framework wich is based on a mobile first approach is the website responsive. 
 The website is adapted to be seen on different screen sizes.  
@@ -240,7 +237,8 @@ No errors where found by the official Jigsaw validator
 4. Lighthouse
 
 ### Fixed bugs 
-- in the allowed hosts in settings.py I first used "" instead ''. Because of this I was unable to get the website deployed in Heroku.
+- In the allowed hosts in settings.py I first used "" instead ''. Because of this I was unable to get the website deployed in Heroku.
+- Last name, first name and email where not required. In the model was blank=true removed. 
 
 
 ### Unfixed bugs

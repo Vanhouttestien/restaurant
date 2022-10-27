@@ -24,10 +24,9 @@ class ReservationNoUser(models.Model):
     fname = models.CharField(
         "First Name",
         max_length=50,
-        blank=True,
         null=True)
-    lname = models.CharField("Last Name", max_length=50, blank=True, null=True)
-    email = models.EmailField("Email Address", blank=True, null=True)
+    lname = models.CharField("Last Name", max_length=50, null=True)
+    email = models.EmailField("Email Address", null=True)
     date = models.DateField("Date")
     number_of_people = models.IntegerField("Number of Guests")
     created_on = models.DateTimeField(auto_now_add=True)
