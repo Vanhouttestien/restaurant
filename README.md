@@ -279,17 +279,17 @@ To attach te posgreSQL database:
 
 ## Credits
 ### Images
-Image on booking page: [tables in sunset](https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/) from pixabay 
-Image on homepage: [tables outside on the street](https://pixabay.com/photos/rome-roma-italy-cafe-italian-1968149/) from pixabay
-Image on about us: [Lasagna](https://pixabay.com/photos/lasagna-pasta-meal-italian-kitchen-5994612/) from pixabay 
-Image on about us: [restaurant kitchen](https://pixabay.com/photos/restaurant-kitchen-chefs-cooks-2623071/) from pixabay
-Image on menu page: [Pizza and oven](https://pixabay.com/photos/pizza-stone-oven-fire-wood-fire-2643374/) from pixabay
+- Image on booking page: [tables in sunset](https://pixabay.com/photos/table-glassware-cutlery-silverware-5356682/) from pixabay 
+- Image on homepage: [tables outside on the street](https://pixabay.com/photos/rome-roma-italy-cafe-italian-1968149/) from pixabay
+- Image on about us: [Lasagna](https://pixabay.com/photos/lasagna-pasta-meal-italian-kitchen-5994612/) from pixabay 
+- Image on about us: [restaurant kitchen](https://pixabay.com/photos/restaurant-kitchen-chefs-cooks-2623071/) from pixabay
+- Image on menu page: [Pizza and oven](https://pixabay.com/photos/pizza-stone-oven-fire-wood-fire-2643374/) from pixabay
 
 ### code 
-[add databaseform](https://www.youtube.com/watch?v=CVEKe39VFu8)
-[update, create and delete view](https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s)
-[color arrow accordion bootstrap](https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap)
+- [add databaseform](https://www.youtube.com/watch?v=CVEKe39VFu8)
+- [update, create and delete view](https://www.youtube.com/watch?v=llbtoQTt4qw&t=2s)
+- [color arrow accordion bootstrap](https://stackoverflow.com/questions/66335238/changing-the-color-arrow-in-bootstrap)
 
 ### others
-Ruben Klein: writing of the menu. 
-Martina Terlevic:  Code Institute Mentor.
+- Ruben Klein: writing of the menu. 
+- Martina Terlevic:  Code Institute Mentor.
